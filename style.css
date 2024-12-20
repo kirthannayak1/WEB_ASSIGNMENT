@@ -1,0 +1,134 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f7; /* Light grayish blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+/* Container for both form and result */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Form styling */
+.form-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    max-width: 500px;
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4a90e2; /* Blue color */
+    font-size: 24px;
+}
+
+/* Input Fields */
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 16px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fafafa; /* Light gray background */
+    transition: border 0.3s, background-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #4a90e2; /* Blue border */
+    outline: none;
+    background-color: #fff; /* White background */
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4a90e2; /* Blue background */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #357ab7; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Error Styling */
+.error-message {
+    color: #e74c3c; /* Red color for error messages */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error {
+    border-color: #e74c3c;
+}
+
+/* Form Data Display Styling */
+.form-data-container {
+    width: 30%;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #4a90e2; /* Blue border on left side */
+}
+
+.form-data-container p {
+    font-size: 18px;
+    color: #333;
+    margin: 12px 0;
+}
+
+.form-data-container strong {
+    color: #4a90e2; /* Blue color for labels */
+}
+
+.form-data-container .data {
+    color: #555;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container, .form-data-container {
+        width: 80%;
+    }
+}
